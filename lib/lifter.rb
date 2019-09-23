@@ -44,4 +44,8 @@ class Lifter
     Membership.new(self, gym, cost)
   end
 
+  def youtube
+    return "Youtube is cool!"
+  end
+
 end
