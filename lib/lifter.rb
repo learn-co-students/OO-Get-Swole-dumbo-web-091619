@@ -27,8 +27,8 @@ class Lifter
     self.memberships.reduce(0) {|sum, gym| sum + gym.cost}
   end
 
-  def add_gym_membership(gym,cost)
-  Membership.new( cost,self, gym) 
+  def add_gym_membership(cost, gym)
+  Membership.new(cost,self,gym) 
   end
 
 end
