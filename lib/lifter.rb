@@ -29,7 +29,7 @@ class Lifter
 
   def get_gym_cost
   # - Get the total cost of a specific lifter's gym memberships
-    get_memberships
+    get_memberships.map { |membership| membership.lifter.lift_total }.sum
   end
 
 
